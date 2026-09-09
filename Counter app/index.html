@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <style>
+        * {
+            background-color: black;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+
+        .number {
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-top: 8rem;
+        }
+
+        .number h1 {
+            font-size: 60px;
+        }
+
+        .plus button,
+        .minus button,
+        .reset button {
+            transition: transform 0.1s;
+            border: none;
+        }
+
+        .plus button:active,
+        .minus button:active,
+        .reset button:active {
+            transform: scale(0.85);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="number">
+        <h1>0</h1>
+    </div>
+
+    <div id="main">
+        <div class="plus">
+            <button><img src="icons8-plus-94.png"></button>
+        </div>
+        <div class="minus">
+            <button><img src="delete.png"></button>
+        </div>
+        <div class="reset">
+            <button> <img src="icons8-reset-94.png"></button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
